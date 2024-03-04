@@ -8,6 +8,7 @@ debug_impl = true
 defmt_impl = "defmt"
 reexport_core_peripherals = true
 reexport_interrupt = true
+field_names_for_enums = true
 
 [ident_formats.register_spec]
 case = "constant"
