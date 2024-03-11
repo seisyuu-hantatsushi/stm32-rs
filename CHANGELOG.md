@@ -20,7 +20,26 @@
 * DMAMUX: merge registers in arrays
 * STM32U5xx: Update SVD to version 1.2 and add variants for xx=35,45,95,A5,99,A9 (#844)
 * Fix ADC SR OVR enums
-* STM32U5xx: Update SVD to version 1.3 (#890)
+* Fix ETH_MACFFR bitOffsets
+* Fix adding OTG_FS GCCFG NOVBUSSENS
+* GFXMMU LUT cluster
+* Add missing CAN registers to l4x3/x5
+* Remove CAN from F101/102
+* Fix L5 DMA cluster
+* Fix writeConstraint bugs
+* STM32G491: Add FDCAN2 peripheral
+* Fix typo in STM32G491 FDCAN2 patch
+* DMA ISR fixes for G0, G4
+* F103: USB RESP1 fix name
+* F4: collect SDIO RESP
+* Fix DAC for stm32f4 (#921)
+* tools_install: support `$CARGO_HOME` environment variable
+* Update RNG for stm32h735
+* H5: Add CRS, WWDG, IWDG, I2C, SBS, PWR, GPIO, EXTI, GPDMA, SPI, UART, RCC, TIM1-8 definitios
+* Add GPIOx:HSLVR
+* Merge USART BRR fields on G4
+* Add G4 DAC peripheral
+* Fix incorrectly used `_read`
 
 [#854]: https://github.com/stm32-rs/stm32-rs/pull/854
 
