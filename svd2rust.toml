@@ -20,9 +20,11 @@ case = "constant"
 
 [ident_formats.enum_read_name]
 case = "constant"
+suffix = "R"
 
 [ident_formats.enum_write_name]
 case = "constant"
+suffix = "W"
 
 [ident_formats.enum_value]
 case = "pascal"
