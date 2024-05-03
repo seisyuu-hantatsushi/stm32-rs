@@ -46,7 +46,7 @@ _include:
  - common_patches/dma/dma2d_v2.yaml
  - ../peripherals/dma/dma2d_v2.yaml
  - collect/hsem/r.yaml
- - collect/hsem/h7_dual.yaml
+ - common_patches/hsem/h7_dual.yaml
  - common_patches/adc/h7.yaml
  - common_patches/dsi/h7.yaml
  - collect/dsi/isr.yaml
