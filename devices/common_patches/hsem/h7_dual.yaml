@@ -8,6 +8,7 @@ HSEM:
       name: C1ICR
       displayName: C1ICR
       description: HSEM Interrupt clear register of Line 1
+      access: read-write
     ISR:
       name: C1ISR
       displayName: C1ISR
@@ -158,6 +159,7 @@ HSEM:
         description: HSEM Interrupt clear register of Line 2
         addressOffset: 0x114
         size: 0x20
+        access: read-write
         resetValue: 0x00000000
         fields:
           ISEM0:
