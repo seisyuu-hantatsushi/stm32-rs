@@ -1,4 +1,37 @@
 HSEM:
+  C1IER:
+    _array:
+      "ISEM*":
+         description: Interrupt(1) semaphore %s enable bit
+  C1ICR:
+    _array:
+      "ISEM*":
+         description: Interrupt(1) semaphore %s clear
+  C1ISR:
+    _array:
+       "ISEM*":
+         description: Interrupt(1) semaphore %s status bit
+  C1MISR:
+    _array:
+       "ISEM*":
+         description: masked interrupt(1) semaphore %s status bit
+  C2IER:
+    _array:
+      "ISEM*":
+         description: Interrupt(2) semaphore %s enable bit
+  C2ICR:
+    _array:
+      "ISEM*":
+         description: Interrupt(2) semaphore %s clear
+  C2ISR:
+    _array:
+       "ISEM*":
+         description: Interrupt(2) semaphore %s status bit
+  C2MISR:
+    _array:
+       "ISEM*":
+         description: masked interrupt(2) semaphore %s status bit
+
   _modify:
     IER:
       name: C1IER
