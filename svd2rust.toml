@@ -9,6 +9,7 @@ impl_defmt = "defmt"
 reexport_core_peripherals = true
 reexport_interrupt = true
 ident_formats_theme = "legacy"
+field_names_for_enums = true
 
 [ident_formats.register_spec]
 case = "constant"
@@ -19,9 +20,11 @@ case = "constant"
 
 [ident_formats.enum_read_name]
 case = "constant"
+suffix = "R"
 
 [ident_formats.enum_write_name]
 case = "constant"
+suffix = "W"
 
 [ident_formats.enum_value]
 case = "pascal"
