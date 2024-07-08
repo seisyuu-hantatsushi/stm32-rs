@@ -6,7 +6,12 @@ all: patch svd2rust
 SHELL := /usr/bin/env bash
 
 # Path to `svd`/`svdtools`
-SVDTOOLS ?= svdtools
+#SVDTOOLS ?= svdtools
+#SVDTOOLS ?= ../svdtools/target/debug/svdtools
+SVDTOOLS ?= ../../rust-embedded/svdtools/target/release/svdtools
+
+#SVD2RUST ?= ../../../../svd2rust/target/release/svd2rust
+SVD2RUST ?= ../../../../../rust-embedded/svd2rust/target/release/svd2rust
 
 CRATES ?= stm32c0 stm32f0 stm32f1 stm32f2 stm32f3 stm32f4 stm32f7 \
           stm32h5 stm32h7 stm32l0 stm32l1 stm32l4 stm32l5 stm32g0 stm32g4 \
@@ -69,7 +74,7 @@ crates:
 define crate_template
 $(1)/src/%/mod.rs: svd/%.svd.patched $(1)/Cargo.toml
 	mkdir -p $$(@D)
-	cd $$(@D); svd2rust -c ../../../svd2rust.toml -i ../../../$$<
+	cd $$(@D); $(SVD2RUST) -c ../../../svd2rust.toml -i ../../../$$<
 	rustfmt $$@
 	rm $$(@D)/build.rs
 	mv -f $$(@D)/generic.rs $$(@D)/../
